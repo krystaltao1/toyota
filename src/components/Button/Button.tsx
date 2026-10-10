@@ -20,6 +20,7 @@ interface Props
     Omit<ComponentProps<'button'>, 'color' | 'children'> {
   children: ReactNode
 }
+
 const Button: FC<Props> = ({
   color,
   children,
