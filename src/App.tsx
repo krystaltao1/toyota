@@ -2,6 +2,7 @@ import { type FC } from 'react'
 import Hero from './components/Hero'
 import Explanation from './components/Explanation'
 import ModelField from './components/ModelField'
+import Footer from './components/Footer'
 
 const App: FC = () => {
   return (
@@ -9,6 +10,7 @@ const App: FC = () => {
       <Hero />
       <Explanation />
       <ModelField />
+      <Footer />
     </>
   )
 }
