@@ -1,1 +1,10 @@
 @import 'tailwindcss';
+
+@utility dot-grid {
+  background-image: radial-gradient(
+    circle,
+    var(--dot-grid-color, #2468ff) var(--dot-grid-dot, 1.3px),
+    transparent 1.3px
+  );
+  background-size: var(--dot-grid-gap, 10px) var(--dot-grid-gap, 10px);
+}

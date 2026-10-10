@@ -3,6 +3,7 @@ import Button from './components/Button'
 import Chip from './components/Chip'
 import ColorButton from './components/ColorButton'
 import ColorList from './components/ColorList'
+import DotGrid from './components/DotGrid/DotGrid'
 
 const App: FC = () => {
   return (
@@ -27,6 +28,8 @@ const App: FC = () => {
         <ColorButton color="red" aria-label="red" />
         <ColorButton color="deepBlue" aria-label="deep blue" />
       </ColorList>
+
+      <DotGrid />
     </>
   )
 }
