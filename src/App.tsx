@@ -1,14 +1,16 @@
 import { type FC } from 'react'
 import Button from './components/Button'
+import Chip from './components/Chip'
 
 const App: FC = () => {
   return (
-    <div className="bg-green-700">
-      <h1 className="text-center text-2xl font-bold">Hello Toyota!</h1>
+    <>
       <Button color="ink">
-        get a quote on <span className="normal-case">bZ4x</span> touring
+        get a quote on <span className="normal-case">bZ4X</span> touring
       </Button>
-    </div>
+      <Chip shape="square">TOYOTA FINANCE OFFER · ENDS 30 SEPTEMBER 2026</Chip>
+      <Chip>new</Chip>
+    </>
   )
 }
 
