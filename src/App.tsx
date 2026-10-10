@@ -3,11 +3,13 @@ import ModelCard from './components/ModelCard'
 import ColorButton from './components/ColorButton'
 import ColorList from './components/ColorList'
 import Hero from './components/Hero'
+import Explanation from './components/Explanation'
 
 const App: FC = () => {
   return (
     <>
       <Hero />
+      <Explanation />
       <div className="flex gap-6">
         <ModelCard
           image="/greyTouring.png"
