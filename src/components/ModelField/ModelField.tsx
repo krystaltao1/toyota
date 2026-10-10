@@ -60,9 +60,9 @@ const ModelField: FC = () => (
       </ModelCard>
     </div>
     <p className="pt-4 text-left text-xs leading-normal text-[#6E6E6E]">
-      &#42;Prices based on Sydney City Toyota&#44; Waterloo, NSW 2017. Driveaway
-      pricing varies by location. Enter your postcode in Build and Price to see
-      yours.
+      &#42;Prices based on Sydney City Toyota&#44; Waterloo&#44; NSW 2017.
+      Driveaway pricing varies by location. Enter your postcode in Build and
+      Price to see yours.
     </p>
   </div>
 )
