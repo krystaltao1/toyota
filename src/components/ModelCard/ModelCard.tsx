@@ -43,13 +43,13 @@ const ModelCard: FC<Props> = ({
   badge = undefined,
 }) => {
   return (
-    <article className="relative w-150 border border-[#E6E6E6] p-8">
+    <article className="relative h-174 border border-[#E6E6E6]">
       <div className="absolute -top-1.25 left-116">
         <DotGrid />
       </div>
-      <img src={image} alt={alt} className="relative mx-auto w-110" />
+      <img src={image} alt={alt} className="relative top-2.5 left-20 w-110" />
 
-      <div className="relative py-8">
+      <div className="relative p-8 pt-0">
         <h3 className="flex items-center gap-2.5">
           <span className="text-2xl font-semibold">{title}</span>
           {badge && <Chip>{badge}</Chip>}

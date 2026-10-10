@@ -5,7 +5,7 @@ import ColorList from './components/ColorList'
 
 const App: FC = () => {
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex gap-6">
       <ModelCard
         image="/greyTouring.png"
         alt="Grey Model"
