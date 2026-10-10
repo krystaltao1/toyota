@@ -1,8 +1,14 @@
-function App() {
+import { type FC } from 'react'
+import Button from './components/Button'
+
+const App: FC = () => {
   return (
-    <h1 className="text-center text-2xl font-bold text-blue-500">
-      Hello Toyota!
-    </h1>
+    <div className="bg-green-700">
+      <h1 className="text-center text-2xl font-bold">Hello Toyota!</h1>
+      <Button color="ink">
+        get a quote on <span className="normal-case">bZ4x</span> touring
+      </Button>
+    </div>
   )
 }
 
