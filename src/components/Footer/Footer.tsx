@@ -9,7 +9,7 @@ const Footer: FC = () => (
         <div className="sm:col-start-2 sm:row-start-2">
           <Logo />
         </div>
-        <p className="leading-[1.65] text-[#9A9A9A] sm:col-span-2 sm:row-start-1">
+        <p className="text-[11.5px] leading-[1.65] text-[#9A9A9A] sm:col-span-2 sm:row-start-1 sm:text-xs">
           Toyota Australia acknowledges the Traditional Owners and Custodians of
           lands throughout Australia. We pay our respects to Elders past and
           present&#44; and the continuation of cultural&#44; spiritual and

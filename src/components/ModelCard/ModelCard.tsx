@@ -43,36 +43,38 @@ const ModelCard: FC<Props> = ({
   badge = undefined,
 }) => {
   return (
-    <article className="relative h-174 border border-[#E6E6E6]">
-      <div className="absolute -top-1.25 left-116">
-        <DotGrid />
+    <article className="relative overflow-hidden border border-[#E6E6E6]">
+      <div className="relative px-4 sm:flex sm:px-12">
+        <div className="absolute top-0 right-0 origin-top-right scale-60 sm:-top-5 sm:right-1 sm:scale-100">
+          <DotGrid />
+        </div>
+        <img src={image} alt={alt} className="relative object-cover" />
       </div>
-      <img src={image} alt={alt} className="relative top-2.5 left-20 w-110" />
 
-      <div className="relative p-8 pt-0">
+      <div className="relative p-7 sm:p-8">
         <h3 className="flex items-center gap-2.5">
-          <span className="text-2xl font-semibold">{title}</span>
+          <span className="text-[22px] font-semibold sm:text-2xl">{title}</span>
           {badge && <Chip>{badge}</Chip>}
         </h3>
-        <p className="pt-1 pb-3.5 text-[15px]">{slogan}</p>
+        <p className="pt-1 pb-3.5 text-sm sm:text-[15px]">{slogan}</p>
         <div className="flex flex-col gap-2.5">
           {children}
 
-          <hr className="w-134 text-[#EEEEEE]" />
+          <hr className="text-[#EEEEEE]" />
           <p className="text-[12.5px]">
             <span>{range}</span>
             <sup>{rangeSup}</sup>
             <span>{rangeAccent}</span>
           </p>
-          <hr className="w-134 text-[#EEEEEE]" />
+          <hr className="text-[#EEEEEE]" />
           <p className="text-[12.5px]">{boot}</p>
-          <hr className="w-134 text-[#EEEEEE]" />
+          <hr className="text-[#EEEEEE]" />
           <p className="text-[12.5px]">
             <span>{power}</span>
             <sup>{powerSup}</sup>
             <span>{powerAccent}</span>
           </p>
-          <hr className="w-134 text-[#EEEEEE]" />
+          <hr className="text-[#EEEEEE]" />
         </div>
 
         <p className="pt-4 pb-0.5 text-[10px] tracking-[0.18em] text-[#6E6E6E] uppercase">
@@ -83,8 +85,9 @@ const ModelCard: FC<Props> = ({
           {eligible}
           <sup>{eligibleSup}</sup>
         </p>
-
-        <Button color="outline">personalise</Button>
+        <Button color="outline" className="w-full sm:w-auto">
+          personalise
+        </Button>
       </div>
     </article>
   )
