@@ -49,6 +49,5 @@ Open http://localhost:5173.
 
 ## Future Improvements
 
-- Improve UI consistency by replacing mixed font-size units (px, em, Tailwind classes) and colour formats (hex codes, named colours) with Tailwind’s theme scale, and confirming these values with the designer.
 - Improve UX by adding hover states and animations to give clearer interaction feedback.
-- Refactor repeated UI code into reusable components to reduce duplication and make the codebase easier for team members to maintain.
+- Replace the subtitute font with Toyota Type once licensed font files are provided.
