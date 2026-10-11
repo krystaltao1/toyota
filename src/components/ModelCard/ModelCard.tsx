@@ -43,53 +43,55 @@ const ModelCard: FC<Props> = ({
   badge = undefined,
 }) => {
   return (
-    <article className="relative overflow-hidden border border-[#E6E6E6]">
-      <div className="relative px-4 sm:flex sm:px-12">
-        <div className="absolute top-0 right-0 origin-top-right scale-60 sm:-top-5 sm:right-1 sm:scale-100">
+    <div className="border-line relative overflow-hidden border">
+      <div className="relative px-4 md:flex md:px-12">
+        <div className="absolute -top-4 right-0 origin-top-right scale-60 md:-top-15 md:right-1 md:scale-100">
           <DotGrid />
         </div>
         <img src={image} alt={alt} className="relative object-cover" />
       </div>
 
-      <div className="relative p-7 sm:p-8">
+      <article className="relative p-7 md:p-8">
         <h3 className="flex items-center gap-2.5">
-          <span className="text-[22px] font-semibold sm:text-2xl">{title}</span>
+          <span className="text-[22px] font-semibold md:text-[24px]">
+            {title}
+          </span>
           {badge && <Chip>{badge}</Chip>}
         </h3>
-        <p className="pt-1 pb-3.5 text-sm sm:text-[15px]">{slogan}</p>
+        <p className="pt-1 pb-3.5 text-[14px] md:text-[15px]">{slogan}</p>
         <div className="flex flex-col gap-2.5">
           {children}
 
-          <hr className="text-[#EEEEEE]" />
+          <hr className="text-line-subtle" />
           <p className="text-[12.5px]">
             <span>{range}</span>
             <sup>{rangeSup}</sup>
             <span>{rangeAccent}</span>
           </p>
-          <hr className="text-[#EEEEEE]" />
+          <hr className="text-line-subtle" />
           <p className="text-[12.5px]">{boot}</p>
-          <hr className="text-[#EEEEEE]" />
+          <hr className="text-line-subtle" />
           <p className="text-[12.5px]">
             <span>{power}</span>
             <sup>{powerSup}</sup>
             <span>{powerAccent}</span>
           </p>
-          <hr className="text-[#EEEEEE]" />
+          <hr className="text-line-subtle" />
         </div>
 
-        <p className="pt-4 pb-0.5 text-[10px] tracking-[0.18em] text-[#6E6E6E] uppercase">
+        <p className="text-grey pt-4 pb-0.5 text-[10px] tracking-[0.18em] uppercase">
           {eyebrow}
         </p>
-        <p className="text-2xl font-semibold">{price}</p>
-        <p className="py-4 text-[12.5px] text-[#2468FF]">
+        <p className="text-[24px] font-semibold">{price}</p>
+        <p className="text-blue py-4 text-[12.5px]">
           {eligible}
           <sup>{eligibleSup}</sup>
         </p>
-        <Button color="outline" className="w-full sm:w-auto">
+        <Button color="outline" className="w-full md:w-auto">
           personalise
         </Button>
-      </div>
-    </article>
+      </article>
+    </div>
   )
 }
 

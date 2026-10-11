@@ -4,13 +4,12 @@ import ColorButton from '../ColorButton'
 import ColorList from '../ColorList'
 
 const ModelField: FC = () => (
-  <div className="mx-auto px-4 pb-16 sm:px-27 sm:pb-24">
-    <h2 className="pb-7.5 text-center text-2xl leading-[1.18] sm:pb-10 sm:text-[44px] sm:leading-[1.14]">
-      Which <span className="text-[#2468FF]">bZ4X</span>{' '}
-      <br className="sm:hidden" />
+  <div className="mx-auto max-w-[1440px] px-4 pb-16 md:px-27 md:pb-24">
+    <h2 className="pb-7.5 text-center text-[24px] leading-[1.18] md:pb-10 md:text-[44px] md:leading-[1.14]">
+      Which <span className="text-blue">bZ4X</span> <br className="md:hidden" />
       is right for you&#63;
     </h2>
-    <div className="flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6">
+    <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-6">
       <ModelCard
         image="/greyTouring.png"
         alt="Grey Model"
@@ -61,7 +60,7 @@ const ModelField: FC = () => (
         </ColorList>
       </ModelCard>
     </div>
-    <p className="pt-4 text-left text-[11px] leading-normal text-[#6E6E6E] sm:text-xs">
+    <p className="text-grey pt-4 text-left text-[11px] leading-normal md:text-[12px]">
       &#42;Prices based on Sydney City Toyota&#44; Waterloo&#44; NSW 2017.
       Driveaway pricing varies by location. Enter your postcode in Build and
       Price to see yours.

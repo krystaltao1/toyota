@@ -4,13 +4,33 @@
 
 @theme {
   --font-sans: 'Google Sans Flex', system-ui, sans-serif;
+
+  --color-blue: #2468ff;
+
+  --color-ink: #1a1a1a;
+  --color-ink-deep: #111111;
+
+  --color-line-subtle: #eeeeee;
+  --color-line: #e6e6e6;
+  --color-line-strong: #d8d8d8;
+  --color-line-dark: #3a3a3a;
+
+  --color-grey: #6e6e6e;
+  --color-grey-dark: #cccccc;
+  --color-grey-dark-muted: #9a9a9a;
+  --color-grey-dark-faint: #777777;
 }
 
 @utility dot-grid {
   background-image: radial-gradient(
     circle,
-    var(--dot-grid-color, #2468ff) var(--dot-grid-dot, 1.3px),
+    var(--dot-grid-color, var(--color-blue)) var(--dot-grid-dot, 1.3px),
     transparent 1.3px
   );
   background-size: var(--dot-grid-gap, 10px) var(--dot-grid-gap, 10px);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-sans);
 }

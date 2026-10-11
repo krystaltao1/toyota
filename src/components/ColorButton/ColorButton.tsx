@@ -6,8 +6,8 @@ const colorButton = tv({
   variants: {
     color: {
       black: 'border-black bg-black',
-      white: 'border-[#D8D8D8] bg-white',
-      lightGray: 'border-[#D8D8D8] bg-[#D9D9D9]',
+      white: 'border-line-strong bg-white',
+      lightGray: 'border-line-strong bg-line-strong',
       gray: 'border-[#757171] bg-[#757171] ',
       darkGray: 'border-[#5C5856] bg-[#5C5856]',
       darkBlue: 'border-[#002060] bg-[#002060]',
