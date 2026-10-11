@@ -2,12 +2,12 @@ import type { FC, ComponentProps, ReactNode } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const chip = tv({
-  base: 'inline-flex items-center justify-center bg-[#2468FF] uppercase text-white text-[9px]',
+  base: 'inline-flex items-center justify-center bg-blue uppercase text-white text-[9px]',
   variants: {
     shape: {
-      pill: 'rounded-xs sm:py-[6px] py-[3px] px-2 tracking-[0.1em] font-semibold',
+      pill: 'rounded-xs md:py-[6px] py-[3px] px-2 tracking-[0.1em] font-semibold',
       square:
-        'tracking-[0.18em] p-1.25 sm:p-[10px] sm:tracking-[0.22em] sm:text-xs',
+        'tracking-[0.18em] p-1.25 md:p-[10px] md:tracking-[0.22em] md:text-[12px]',
     },
   },
   defaultVariants: { shape: 'pill' },

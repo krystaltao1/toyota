@@ -4,12 +4,12 @@ import Drawer from './components/Drawer'
 
 const Footer: FC = () => (
   <footer className="relative">
-    <div className="bg-[#111111] px-4 py-8 sm:px-27 sm:py-10">
-      <div className="grid gap-y-5 sm:grid-cols-[1fr_auto] sm:items-center sm:gap-y-6">
-        <div className="sm:col-start-2 sm:row-start-2">
+    <div className="bg-ink-deep px-4 py-8 md:px-27 md:py-10">
+      <div className="grid gap-y-5 md:grid-cols-[1fr_auto] md:items-center md:gap-y-6">
+        <div className="md:col-start-2 md:row-start-2">
           <Logo />
         </div>
-        <p className="text-[11.5px] leading-[1.65] text-[#9A9A9A] sm:col-span-2 sm:row-start-1 sm:text-xs">
+        <p className="text-grey-dark-muted text-[11.5px] leading-[1.65] md:col-span-2 md:row-start-1 md:text-[12px]">
           Toyota Australia acknowledges the Traditional Owners and Custodians of
           lands throughout Australia. We pay our respects to Elders past and
           present&#44; and the continuation of cultural&#44; spiritual and
@@ -17,14 +17,17 @@ const Footer: FC = () => (
           peoples.
         </p>
 
-        <div className="sm:rom-start-2 flex flex-wrap items-center gap-5 sm:col-start-1">
-          <a href="/privacy" className="text-xs text-[#CCCCCC] underline">
+        <div className="flex flex-wrap items-center gap-5 md:col-start-1 md:row-start-2">
+          <a href="/privacy" className="text-grey-dark text-[12px] underline">
             Privacy
           </a>
-          <a href="/conditions" className="text-xs text-[#CCCCCC] underline">
+          <a
+            href="/conditions"
+            className="text-grey-dark text-[12px] underline"
+          >
             Conditions of use
           </a>
-          <span className="w-full text-[10px] text-[#777777] sm:w-auto">
+          <span className="text-grey-dark-faint w-full text-[10px] md:w-auto">
             Copyright 2026 Toyota Australia. All Rights Reserved.
           </span>
         </div>
