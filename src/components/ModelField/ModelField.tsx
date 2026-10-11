@@ -4,11 +4,13 @@ import ColorButton from '../ColorButton'
 import ColorList from '../ColorList'
 
 const ModelField: FC = () => (
-  <div className="mx-auto max-w-360 px-27 pb-24">
-    <h2 className="pb-10 text-center text-[44px] leading-[1.14]">
-      Which <span className="text-[#2468FF]">bZ4X</span> is right for you&#63;
+  <div className="mx-auto px-4 pb-16 sm:px-27 sm:pb-24">
+    <h2 className="pb-7.5 text-center text-2xl leading-[1.18] sm:pb-10 sm:text-[44px] sm:leading-[1.14]">
+      Which <span className="text-[#2468FF]">bZ4X</span>{' '}
+      <br className="sm:hidden" />
+      is right for you&#63;
     </h2>
-    <div className="flex items-center justify-center gap-6">
+    <div className="flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6">
       <ModelCard
         image="/greyTouring.png"
         alt="Grey Model"
@@ -59,7 +61,7 @@ const ModelField: FC = () => (
         </ColorList>
       </ModelCard>
     </div>
-    <p className="pt-4 text-left text-xs leading-normal text-[#6E6E6E]">
+    <p className="pt-4 text-left text-[11px] leading-normal text-[#6E6E6E] sm:text-xs">
       &#42;Prices based on Sydney City Toyota&#44; Waterloo&#44; NSW 2017.
       Driveaway pricing varies by location. Enter your postcode in Build and
       Price to see yours.
